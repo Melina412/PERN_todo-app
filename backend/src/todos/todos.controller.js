@@ -1,4 +1,4 @@
-import { pool } from '../../db.js';
+import { pool } from '../config/db.js';
 
 //$ post Todo ---------------------------------------------
 export async function postTodo(req, res) {

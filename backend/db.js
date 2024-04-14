@@ -9,6 +9,3 @@ export const pool = new Pool({
   port: process.env.DB_PORT,
   database: process.env.DB_NAME,
 });
-
-const user = process.env.DB_USER;
-console.log({ user });

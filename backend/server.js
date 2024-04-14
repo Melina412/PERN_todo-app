@@ -1,9 +1,12 @@
-import express from 'express';
 import 'dotenv/config';
+import { app } from './src/app.js';
 
-export const app = express();
 const PORT = process.env.PORT;
 
+app.get('/', (_, res) => {
+  res.json({ message: `express server on port ${PORT} ✅` });
+});
+
 app.listen(PORT, () => {
-  console.log('express server on port', PORT);
+  console.log(`express server on port ${PORT} ✅`);
 });

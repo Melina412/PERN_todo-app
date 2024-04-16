@@ -26,12 +26,12 @@ const TodoInput = () => {
 
   return (
     <div>
-      <h1 className='text-3xl text-center mt-5'>Pern Todo List</h1>
-      <div className='flex justify-center mt-5'>
+      <h1 className='text-3xl text-center mt-5'>Todo List</h1>
+      <div className='flex justify-center gap-2 mt-5'>
         <input
           type='text'
-          placeholder='Type here'
-          className='input input-bordered w-full max-w-xs'
+          placeholder='Type new todo here'
+          className='input input-bordered w-full max-w-sm'
           ref={inputRef}
         />
         <button onClick={addTodo} className='btn btn-primary'>

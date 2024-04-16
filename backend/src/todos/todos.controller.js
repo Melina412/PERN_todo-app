@@ -2,7 +2,7 @@ import { pool } from '../config/db.js';
 
 //$ post Todo ---------------------------------------------
 export async function postTodo(req, res) {
-  console.log(req.body);
+  console.log('req.body: ', req.body);
   try {
     const { description } = req.body;
     const todo = await pool.query('INSERT INTO todo (description) VALUES($1)', [

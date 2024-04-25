@@ -1,11 +1,11 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 
-const EditTodo = ({ todos, todo, getTodos }) => {
-  const editRef = useRef();
+const EditTodo = ({ todo, getTodos }) => {
+  // const editRef = useRef(); // muss hier doch einen state nehmen um den input bei cancel wieder auf der vorherigen wert zurücksetzen zu können
+  const [description, setDescription] = useState(todo?.description);
 
   const editTodo = async (id) => {
     console.log({ id });
-    const description = editRef.current?.value; // das muss hier description heißen weil ich im backend die db query auch so benannt hab
     console.log({ description });
     try {
       const res = await fetch(
@@ -43,8 +43,8 @@ const EditTodo = ({ todos, todo, getTodos }) => {
           <input
             type='text'
             className='input input-bordered w-full mt-5'
-            defaultValue={todo?.description}
-            ref={editRef}
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
           <div className='modal-action'>
             <form method='dialog'>
@@ -54,7 +54,11 @@ const EditTodo = ({ todos, todo, getTodos }) => {
                 onClick={() => editTodo(todo?.todo_id)}>
                 Edit
               </button>
-              <button className='btn ml-2'>Close</button>
+              <button
+                className='btn ml-2'
+                onClick={() => setDescription(todo?.description)}>
+                Cancel
+              </button>
             </form>
           </div>
         </div>

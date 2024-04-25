@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const EditTodo = ({ todos, todo, getTodos }) => {
+const EditTodo = ({ todo, getTodos }) => {
   // const editRef = useRef(); // muss hier doch einen state nehmen um den input bei cancel wieder auf der vorherigen wert zurücksetzen zu können
   const [description, setDescription] = useState(todo?.description);
 

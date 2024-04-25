@@ -26,6 +26,12 @@ const TodoInput = ({ getTodos }) => {
     }
   };
 
+  const triggerEvent = (e) => {
+    if (e.key === 'Enter' && inputRef.current.value.length > 0) {
+      addTodo();
+    }
+  };
+
   return (
     <div>
       <h1 className='text-3xl text-center mt-5'>Todo List</h1>
@@ -35,6 +41,7 @@ const TodoInput = ({ getTodos }) => {
           placeholder='Type new todo here'
           className='input input-bordered w-full max-w-sm'
           ref={inputRef}
+          onKeyDown={triggerEvent}
         />
         <button onClick={addTodo} className='btn btn-primary'>
           Add

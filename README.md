@@ -25,49 +25,42 @@ So basically with this app you can add/edit/delete todos and enjoy not getting b
 
 ## Preview
 
-<table><tbody>
+<table>
+<tbody>
 
 <!--# 1. Reihe  ---------- -->
-<!-- <tr> -->
+<tr>
 
-<!--$ 1. Spalte ---------- -->
 <td align="center">
 <img src="./github/IMG_5368.PNG"/>
 </td>
 
-<!--$ 2. Spalte ---------- -->
 <td align="center">
 <img src="./github/IMG_5369.PNG"/>
 </td>
 
-<!--$ 3. Spalte ---------- -->
 <td align="center">
 <img src="./github/IMG_5370.PNG"/>
 </td>
 
-</tbody>
-</table>
-<!-- </tr> -->
+</tr>
 
 <!--# 2. Reihe  ---------- -->
-<!-- <tr> -->
+<tr>
 
-<table><tbody>
-<!--$ 1. Spalte ---------- -->
 <td align="center">
 <img src="./github/IMG_5371.PNG"/>
 </td>
 
-<!--$ 2. Spalte ---------- -->
 <td align="center">
 <img src="./github/IMG_5373.PNG"/>
 </td>
 
-<!--$ 3. Spalte ---------- -->
 <td align="center">
 <img src="./github/IMG_5372.PNG"/>
 </td>
 
-<!-- </tr> -->
+</tr>
+
 </tbody>
 </table>

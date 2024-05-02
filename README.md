@@ -31,3 +31,10 @@ So basically with this app you can add/edit/delete todos and enjoy not getting b
 <img src="./github/IMG_5371.PNG" width="32%"/>
 <img src="./github/IMG_5373.PNG" width="32%"/>
 <img src="./github/IMG_5372.PNG" width="32%"/>
+
+![preview img 1](./github/IMG_5368.PNG)
+![preview img 1](./github/IMG_5369.PNG)
+![preview img 1](./github/IMG_5370.PNG)
+![preview img 1](./github/IMG_5371.PNG)
+![preview img 1](./github/IMG_5373.PNG)
+![preview img 1](./github/IMG_5372.PNG)

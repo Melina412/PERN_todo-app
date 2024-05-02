@@ -15,7 +15,8 @@ app.get('/', (_, res) => {
   res.json({ message: `express server on port ${PORT} ✅` });
 });
 
+createTable();
+
 app.listen(PORT, () => {
-  createTable();
   console.log(`express server on port ${PORT} ✅`);
 });

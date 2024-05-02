@@ -11,7 +11,7 @@ app.use(cors({ origin: process.env.ALLOWED_ORIGIN }));
 app.use(express.json());
 app.use(morgan('dev'));
 
-const FRONTEND_DIR = new URL('../frontend/dist', import.meta.url).pathname;
+const FRONTEND_DIR = new URL('../../frontend/dist', import.meta.url).pathname;
 app.use(express.static(FRONTEND_DIR));
 
 app.use('/api/todos', todoRouter);

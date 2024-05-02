@@ -1,5 +1,6 @@
 import 'dotenv/config';
 import { app } from './src/app.js';
+import { createTable } from './src/config/db.js';
 
 const PORT = process.env.PORT;
 
@@ -15,5 +16,6 @@ app.get('/', (_, res) => {
 });
 
 app.listen(PORT, () => {
+  createTable();
   console.log(`express server on port ${PORT} ✅`);
 });

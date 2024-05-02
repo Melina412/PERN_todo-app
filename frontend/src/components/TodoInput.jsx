@@ -34,16 +34,20 @@ const TodoInput = ({ getTodos }) => {
 
   return (
     <div>
-      <h1 className='text-3xl text-center mt-5'>Todo List</h1>
-      <div className='flex justify-center gap-2 mt-5'>
+      <h1 className='text-3xl text-center mt-5 tracking-wide'>TODO LIST</h1>
+      <div
+        className='flex justify-center gap-4 mt-5 px-4
+       w-full'>
         <input
           type='text'
           placeholder='Type new todo here'
-          className='input input-bordered w-full max-w-sm'
+          className='input input-bordered w-full max-w-sm h-10 sm:h-12'
           ref={inputRef}
           onKeyDown={triggerEvent}
         />
-        <button onClick={addTodo} className='btn btn-primary'>
+        <button
+          onClick={addTodo}
+          className='btn btn-primary px-3 h-10 min-h-10 sm:px-4 sm:h-12 sm:min-h-12'>
           Add
         </button>
       </div>

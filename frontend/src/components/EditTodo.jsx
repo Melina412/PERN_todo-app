@@ -31,7 +31,7 @@ const EditTodo = ({ todo, getTodos }) => {
   return (
     <>
       <button
-        className='btn btn-neutral'
+        className='btn btn-neutral px-3 h-10 min-h-10 sm:px-4 sm:h-12 sm:min-h-12'
         onClick={() =>
           document.getElementById(`id-${todo?.todo_id}`).showModal()
         }>
@@ -39,7 +39,7 @@ const EditTodo = ({ todo, getTodos }) => {
       </button>
       <dialog id={`id-${todo?.todo_id}`} className='modal'>
         <div className='modal-box'>
-          <h3 className='font-bold text-lg'>Edit Todo:</h3>
+          <h3 className='font-bold text-lg text-left'>Edit Todo:</h3>
           <input
             type='text'
             className='input input-bordered w-full mt-5'

@@ -18,7 +18,7 @@ const DeleteTodo = ({ todo, getTodos }) => {
   return (
     <>
       <button
-        className='btn btn-secondary'
+        className='btn btn-secondary px-3 h-10 min-h-10 sm:px-4 sm:h-12 sm:min-h-12'
         onClick={() =>
           document.getElementById(`delete-id-${todo?.todo_id}`).showModal()
         }>
@@ -26,7 +26,9 @@ const DeleteTodo = ({ todo, getTodos }) => {
       </button>
       <dialog id={`delete-id-${todo?.todo_id}`} className='modal'>
         <div className='modal-box'>
-          <p className='py-4'>Are you sure you want to delete this Todo?</p>
+          <p className='py-4 text-left'>
+            Are you sure you want to delete this Todo?
+          </p>
           <div className='modal-action'>
             <form method='dialog'>
               {/* if there is a button in form, it will close the modal */}

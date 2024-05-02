@@ -8,9 +8,12 @@ export const pool = new Pool({
 
 export async function createTable() {
   try {
-    const result = pool.query(`CREATE TABLE IF NOT EXISTS todo(
+    const result = pool.query(`
+    CREATE TABLE IF NOT EXISTS todo( 
       todo_id SERIAL PRIMARY KEY,
-      description VARCHAR(255)`);
+      description VARCHAR(255)
+    );
+    `);
     if (result) {
       console.log('sql table successfully created');
     }

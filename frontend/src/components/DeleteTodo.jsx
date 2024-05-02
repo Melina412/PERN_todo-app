@@ -8,7 +8,7 @@ const DeleteTodo = ({ todo, getTodos }) => {
         }
       );
       if (res.ok) {
-        console.log('toto deleted!');
+        // console.log('toto deleted!');
         getTodos();
       }
     } catch (error) {

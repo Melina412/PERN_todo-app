@@ -5,7 +5,7 @@ const TodoInput = ({ getTodos }) => {
 
   const addTodo = async () => {
     const description = inputRef.current?.value; // das muss hier description heißen weil ich im backend die db query auch so benannt hab
-    console.log({ description });
+    // console.log({ description });
 
     try {
       const res = await fetch(`${import.meta.env.VITE_BACKENDURL}/api/todos`, {
@@ -17,7 +17,7 @@ const TodoInput = ({ getTodos }) => {
       });
 
       if (res.ok) {
-        console.log('todo was submitted!');
+        // console.log('todo was submitted!');
         getTodos();
         inputRef.current.value = '';
       }

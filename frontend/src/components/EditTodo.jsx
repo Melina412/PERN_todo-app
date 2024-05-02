@@ -5,8 +5,8 @@ const EditTodo = ({ todo, getTodos }) => {
   const [description, setDescription] = useState(todo?.description);
 
   const editTodo = async (id) => {
-    console.log({ id });
-    console.log({ description });
+    // console.log({ id });
+    // console.log({ description });
     try {
       const res = await fetch(
         `${import.meta.env.VITE_BACKENDURL}/api/todos/${id}`,
@@ -20,7 +20,7 @@ const EditTodo = ({ todo, getTodos }) => {
       );
 
       if (res.ok) {
-        console.log('todo was edited!');
+        // console.log('todo was edited!');
         getTodos();
       }
     } catch (error) {

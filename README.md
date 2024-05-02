@@ -25,16 +25,49 @@ So basically with this app you can add/edit/delete todos and enjoy not getting b
 
 ## Preview
 
-<img src="./github/IMG_5368.PNG" width="32%"/>
-<img src="./github/IMG_5369.PNG" width="32%"/>
-<img src="./github/IMG_5370.PNG" width="32%"/>
-<img src="./github/IMG_5371.PNG" width="32%"/>
-<img src="./github/IMG_5373.PNG" width="32%"/>
-<img src="./github/IMG_5372.PNG" width="32%"/>
+<table><tbody>
 
-![preview img 1](./github/IMG_5368.PNG)
-![preview img 1](./github/IMG_5369.PNG)
-![preview img 1](./github/IMG_5370.PNG)
-![preview img 1](./github/IMG_5371.PNG)
-![preview img 1](./github/IMG_5373.PNG)
-![preview img 1](./github/IMG_5372.PNG)
+<!--# 1. Reihe  ---------- -->
+<!-- <tr> -->
+
+<!--$ 1. Spalte ---------- -->
+<td align="center">
+<img src="./github/IMG_5368.PNG"/>
+</td>
+
+<!--$ 2. Spalte ---------- -->
+<td align="center">
+<img src="./github/IMG_5369.PNG"/>
+</td>
+
+<!--$ 3. Spalte ---------- -->
+<td align="center">
+<img src="./github/IMG_5370.PNG"/>
+</td>
+
+</tbody>
+</table>
+<!-- </tr> -->
+
+<!--# 2. Reihe  ---------- -->
+<!-- <tr> -->
+
+<table><tbody>
+<!--$ 1. Spalte ---------- -->
+<td align="center">
+<img src="./github/IMG_5371.PNG"/>
+</td>
+
+<!--$ 2. Spalte ---------- -->
+<td align="center">
+<img src="./github/IMG_5373.PNG"/>
+</td>
+
+<!--$ 3. Spalte ---------- -->
+<td align="center">
+<img src="./github/IMG_5372.PNG"/>
+</td>
+
+<!-- </tr> -->
+</tbody>
+</table>
